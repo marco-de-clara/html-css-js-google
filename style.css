@@ -49,6 +49,7 @@ header {
     padding: 0 8px;
     opacity: .55;
     cursor: pointer;
+    vertical-align: middle;
 }
 
 .header-left a:hover,
@@ -161,4 +162,66 @@ main img {
 .dropmenu-item:hover {
     background: #f6fafe;
     border-radius: 12px;
+}
+
+.icons {
+    background-image: url("img/google-icons.png");
+    background-size: 64px 2824px;
+}
+
+.icon-layout {
+    display: inline-block;
+    height: 64px;
+    vertical-align: top;
+    width: 64px;
+}
+
+/* Icon positions in google-icons */
+
+#account {
+    background-position: 0 -1449px;
+}
+
+#search{
+    background-position: 0 -138px;
+}
+
+#maps {
+    background-position: 0 -828px;
+}
+
+#youtube {
+    background-position: 0 -1311px;
+}
+
+#play {
+    background-position: 0 -207px;
+}
+
+#news {
+    background-position: 0 -2001px;
+}
+
+#gmail {
+    background-position: 0 -483px;
+}
+
+#contacts {
+    background-position: 0 -1863px;
+}
+
+#drive {
+    background-position: 0 -2277px;
+}
+
+#calendar {
+    background-position: 0 -2553px;
+}
+
+#translate {
+    background-position: 0 -1242px;
+}
+
+#photos {
+    background-position: 0 -621px;
 }
