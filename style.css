@@ -33,17 +33,11 @@ header {
     position: relative;
 }
 
-.header-left a,
-.header-right a {
-    text-decoration: none;
-    font-size: .65rem;
-}
-
-.header-left a,
-.header-right a {
+.link-layout {
     text-decoration: none;
     color: rgba(0, 0, 0 , .85);
     padding: 0 8px;
+    font-size: .65rem;
 }
 
 .fa-th {
@@ -53,8 +47,7 @@ header {
     vertical-align: middle;
 }
 
-.header-left a:hover,
-.header-right a:hover {
+.link-layout:hover {
     text-decoration: underline;
 }
 
@@ -147,7 +140,7 @@ main img {
 }
 
 .dropmenu.show,
-footer.show {
+.popup-wrapper.show {
     display: block;
 }
 
@@ -183,12 +176,11 @@ footer {
     bottom: 0;
     left: 0;
     position: fixed;
-    display: none;
 }
 
 .popup-wrapper {
     border-top: 1px solid #e4e4e4;
-    border-bottom: 1px solid #e4e4e4;
+    display: none;
 }
 
 .pop-up, .popup-left {
@@ -199,7 +191,7 @@ footer {
 
 .pop-up {
     justify-content: space-between;
-    margin: 24px;
+    margin: 24px 24px 24px 19px;
 }
 
 .popup-icon {
@@ -242,6 +234,38 @@ footer {
     background: #155cba;
 }
 
+.footer-top,
+.footer-bot {
+    border-top: 1px solid #e4e4e4;
+    height: 40px;
+    background: #f2f2f2;
+}
+
+.text-footer {
+    color: rgba(0, 0, 0 , .85);
+    margin-left: 32px;
+    line-height: 40px;
+    font-size: .75rem;
+}
+
+.footer-bot {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.footerbot-left,
+.footerbot-right {
+    line-height: 38px;
+}
+
+.footerbot-left {
+    margin-left: 24px;
+}
+
+.footerbot-right {
+    margin-right: 24px;
+}
 
 /* Icon positions in google-icons */
 

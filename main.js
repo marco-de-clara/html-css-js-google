@@ -14,5 +14,5 @@ $(document).mouseup(function(event) {
 
 // catch click on transparent button to close pop-up
 $('.btn-transparent').click(function() {
-    $('footer').removeClass('show');
+    $('.popup-wrapper').removeClass('show');
 });
