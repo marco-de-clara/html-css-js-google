@@ -10,6 +10,7 @@ body {
     font-family: arial;
     position: relative;
     color: #222;
+    height: 100%;
 }
 
 header {
@@ -145,7 +146,8 @@ main img {
     z-index: 10;
 }
 
-.dropmenu.show {
+.dropmenu.show,
+footer.show {
     display: block;
 }
 
@@ -176,9 +178,74 @@ main img {
     width: 64px;
 }
 
+footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+}
+
+.popup-wrapper {
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.pop-up, .popup-left {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.pop-up {
+    justify-content: space-between;
+    margin: 24px;
+}
+
+.popup-icon {
+    margin-right: 24px;
+}
+
+.btn-transparent,
+.btn-dark {
+    height: 36px;
+    padding: 10px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: .7rem;
+    border: 0;
+}
+
+.btn-transparent {
+    color: #4285f4;
+    background: transparent;
+}
+
+.btn-transparent:hover {
+    background: rgba(153, 153, 153, .2);
+}
+
+.btn-transparent:active {
+    background: rgba(153, 153, 153, .4);
+}
+
+.btn-dark {
+    color: #fff;
+    background: #1A73E8;
+}
+
+.btn-dark:hover {
+    background: #1767d0;
+}
+
+.btn-dark:active {
+    background: #155cba;
+}
+
+
 /* Icon positions in google-icons */
 
-#account {
+.account {
     background-position: 0 -1449px;
 }
 
