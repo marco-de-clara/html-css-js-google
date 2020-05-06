@@ -29,6 +29,7 @@ header {
 
 .header-right {
     float: left;
+    position: relative;
 }
 
 .header-left a,
@@ -47,6 +48,7 @@ header {
 .fa-th {
     padding: 0 8px;
     opacity: .55;
+    cursor: pointer;
 }
 
 .header-left a:hover,
@@ -93,8 +95,8 @@ main img {
 }
 
 .searchbar:hover {
-    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-    border-color: rgba(223,225,229,0);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
 }
 
 .fa-search {
@@ -125,4 +127,38 @@ main img {
 
 .btn-primary:hover {
     border: 1px solid #c6c6c6;
+}
+
+.dropmenu {
+    display: none;
+    width: 340px;
+    height: 470px;
+    top: 0;
+    right: 0;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+    background: #fff;
+    position: absolute;
+    z-index: 10;
+}
+
+.dropmenu.show {
+    display: block;
+}
+
+.dropmenu-item {
+    display: inline-block;
+    width: 84px;
+    height: 84px;
+    margin: 12px;
+    font-size: .75rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropmenu-item:hover {
+    background: #f6fafe;
+    border-radius: 12px;
 }
